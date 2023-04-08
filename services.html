@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services</title>
+    <style>
+   #services{
+    height: 345px;
+    margin: 34px;
+    display: flex;
+    text-align: center;
+}
+#services-container::before{
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.5;
+    background: url('./service.jpg') no-repeat center center/cover;
+}
+.h-primary{
+    font-family: 'bree serif',serif;
+    font-size: 50px;
+    text-align: center;
+    color: #ff0461;
+    padding-top: 50px;
+}
+#services .box{
+    border: 3px solid brown;
+    padding: 4px;
+    margin: 2px 55px;
+    border-radius: 20px;
+    background-color: wheat;
+    margin-bottom: 20px;
+    height: 360px;
+    width: 300px;
+    box-shadow: 5px 5px 3px gray;
+}
+#services .box img{
+    height: 80px;
+    margin: auto;
+    display: block;
+}
+#services h2{
+    margin: 2px 5px;
+}
+#services .box p{
+   font-family: 'bree serif',serif;
+}
+    </style>
+      <link rel="stylesheet" media="screen and (max-width: 900px)" href="phone.css">
+</head>
+<body>
+    <section id="services-container">
+        <h1 class="h-primary">Our Services </h1>
+        <div id="services">
+            <div class="box">
+                <img src="food.png" alt="">
+                <h2 class="h-secondary center">Bulk Ordering</h2>
+                <p class="center">Every buyer likes a good deal, and buying products in bulk could be one of the best. The customer has the provision to add the custom  for products to buy in bulk and Buyer can view the bulk orders and price and many more. we're often able to give even bigger discounts for bulk orders.</p>
+            </div>
+            <div class="box">
+                <img src="logo4.png" alt="">
+                <h2 class="h-secondary center">Food catering</h2>
+                <p class="center">Food is the basic necessity of one’s life. Along with good taste and choice in eating the food, there is something else that also matters i.e., presentation of it. We will make your celebration of food with your family and friends lovely and making your food beautifull.</p>
+            </div>
+            <div class="box">
+                <img src="boy1.png" alt="">
+                <h2 class="h-secondary center">Food Ordering </h2>
+                <p class="center">Food delivery might just be the best thing about living in the modern world.Food delivery Caterers the Customers through delivering Food at their Doorstep easily.When you crave for midnight delicacy, just dial our number. Speedy and quicker delivery with us.
+                    
+                    We promise to deliver on time. </p>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

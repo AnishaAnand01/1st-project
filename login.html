@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login</title>
+    <style>
+#contact{
+    margin: 0px;
+    padding: 0px;
+}
+ #contact::before{
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.2;
+    background: url('./contact.jpg') no-repeat center center/cover;
+}
+#contact-box{
+    display:flex ;
+    justify-content: center ;
+    align-items: center;
+    padding-bottom: 24px;
+}
+#contact-box input{
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 9px;
+    font-size: 0.7rem;
+}
+#contact-box form{
+    width: 25%;
+}
+#contact-box label{
+    font-size: 1.3rem; 
+    font-family: 'Bree serif',serif;
+    color: blue;
+
+}
+.h-primary{
+    font-family: 'bree serif',serif;
+    font-size: 50px;
+    text-align: center;
+    color: blue;
+    padding-top: 50px;
+}
+#submit{
+    text-align: center;
+    margin: 25px 0px 0px 0px;
+}
+#submit input{
+    width: 25%;
+   
+}
+#reset{
+    margin-left:30px ;
+}
+    </style>
+      <link rel="stylesheet" media="screen and (max-width: 900px)" href="phone.css">
+</head>
+<body>
+    <section id="contact">
+        <h1 class="h-primary center">Register Yourself</h1>
+
+        <div id="contact-box">
+            <form action="">
+
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" name="name" id="name" placeholder="Enter your name">
+            </div>
+
+            <div class="form-group">
+                <label for="name">Email:</label>
+                <input type="email" name="email" id="email" placeholder="Enter your email">
+            </div>
+
+            <div class="form-group">
+                <label for="name">Phone Number:</label>
+                <input type="number" name="number" id="number" placeholder="Enter your phone number">
+            </div>
+
+            <div class="form-group">
+                <label for="name">Address:</label>
+                <input type="Text" name="address" id="address" placeholder=" Enter Complete Adreess">
+            </div>
+            <div id="submit">
+                <input type="submit" name="Submit">
+                <input type="reset" name="Submit" id="reset">
+             </div>
+       </form>
+       </div>
+       </section>
+</body>
+</html>

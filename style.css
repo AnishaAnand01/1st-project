@@ -1,0 +1,330 @@
+/* css reset */
+*{
+    margin: 0;
+    padding: 0;    
+} 
+html{
+    scroll-behavior: smooth;
+}
+/* css variables */
+:root{
+--navbar-height: 59px;
+}
+
+/* navigation bar */
+#navbar{
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top: 0px;
+}
+
+#navbar::before{
+    background-color: black;
+    content: "";
+    position:absolute ;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.7;
+}
+/*Navigation bar: Logo and image */
+#logo{
+    margin: 10px 34px;
+}
+#logo img{
+    height: 59px;
+    margin: 3px 6px;
+}
+
+/* Navigation bar: List Styling */
+#navbar ul{
+    display: flex;
+    /* font-family: 'Baloo Bhai',cursive; */
+}
+
+#navbar ul li {
+    list-style: none;
+    font-size: 1.2rem;
+}
+#navbar ul li a{
+    color:white;
+    display: block;
+    padding: 3px 22px;
+    border-radius: 20px;
+    text-decoration: none;
+}
+#navbar ul li a:hover{
+    color: black;
+    background-color: white;
+}
+#search{
+    margin-left: 80px;
+    border: 1px solid #f5eeee;
+    border-radius: 20px;
+}
+#search input{
+    border: 2px solid #797878;
+    border-radius: 20px;
+    padding-left: 20px;
+}
+#search input:hover{
+border: 2px solid rgb(13, 13, 15);
+}
+#login{
+   margin-left: 200px; 
+  
+}
+
+#login li{
+    list-style: none;
+    font-size: 1.3rem;
+}
+#login li a{
+    text-decoration:none;
+    color: white;
+    border-radius: 20px;
+    display: block;
+    width: 100px;
+    text-align: center;
+
+
+}
+#login li a:hover{
+    color: black;
+    background-color: white;
+    text-decoration: underline;
+}
+/* home section */
+#home{
+    display: flex;
+    flex-direction: column;
+    padding: 3px 200px;
+    height: 385px;
+    justify-content: center;
+    align-items: center;
+}
+#home::before{
+    content: "";
+    position: absolute; 
+    background: url('./hotel.jpg');
+    height: 470px;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    z-index: -1;
+    opacity:0.89;
+}
+#home h1{
+    color: white;
+    text-align: center;
+    font-family: 'Bree serif',serif;
+
+}
+#home p{
+    color: white;
+    text-align: center;
+    font-size: 18px;
+    font-family: cursive;
+}
+/* services section */
+#services{
+    height: 345px;
+    margin: 34px;
+    display: flex;
+    text-align: center;
+}
+#services .box{
+    border: 3px solid brown;
+    padding: 4px;
+    margin: 18px 71px;
+    border-radius: 20px;
+    background-color: wheat;
+    margin-bottom: 20px;
+    height: 100%;
+    width: 100%;
+}
+#services .box img{
+    height: 25%;
+    margin: auto;
+    display: block;
+}
+#services h2{
+    margin: 2px 5px;
+}
+#services .box p{
+   font-family: 'bree serif',serif;
+   font-size: 100%;
+}
+/* clients section */
+#client-section{
+    position:relative;
+    margin: 120px 0px 58px 0px;
+
+}
+#client-section::before{
+    content: "";
+    position: absolute;
+    background: url('./bg.jpg');
+    width: 100%;
+    height:125%;
+    z-index: -1;
+    opacity: 0.3;
+   
+}
+#clients{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.client-item{
+    padding: 2%;
+}
+#clients img{
+    height: 100px;
+}
+/* contact section */
+#contact{
+    position: relative;
+    height: 100%;
+}
+#contact::before{
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.7;
+    background: url('./bg1.jpg') no-repeat center center/cover;
+}
+#contact-box{
+    display:flex ;
+    justify-content: center ;
+    align-items: center;
+    padding-bottom: 24px;
+}
+#contact-box input,
+#contact-box textarea{
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 9px;
+    font-size: 0.7rem;
+}
+#contact-box form{
+    width: 30%;
+}
+#contact-box label{
+    font-size: 1.3rem; 
+    font-family: 'Bree serif',serif;
+
+}
+
+/* utility classes */
+.h-primary{
+    font-family: 'bree serif',serif;
+    font-size: 3.8rem;
+    text-align: center;
+
+}
+.h-secondary{ 
+    font-family: 'Bree serif',serif;
+    font-size: 2rem;
+    padding: 12px;
+
+}
+.btn{
+    padding: 6px 20px;
+    border:2px solid white;
+    background-color: brown;
+    color: white;
+    margin: 17px;
+    font-size: 1.5rem;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.footer{
+    background:#111114;
+    height: 140px;
+    width: 100%;
+    display: flex;
+}
+.footer-nav{
+    height: 100px;
+    width: 0px;
+    padding: 10px 0px 0px 20px;
+    margin-left: 200px;
+    list-style: none;
+}
+.item{
+    font-size: 16px;
+    padding:3px 0px ;
+    letter-spacing: 1px;
+
+}
+.item:hover{
+    color: rgb(238, 194, 194);
+    text-decoration:underline ;
+}
+.footer-nav li a{
+    text-decoration: none;
+    color: beige;
+   
+}
+.social-site {
+    text-align: center;
+    margin: 0px 25px 0px 250px;
+}
+
+  
+  .fa:hover {
+      opacity: 0.7;
+  }
+  .fa-facebook {
+  /* background: #3B5998; */
+  /* color: rgb(233, 233, 233);  */
+  color: #9eafd3;
+}
+
+.fa-twitter { 
+  /* background: #55ACEE; */
+  /* color: white; */
+  color:#55ACEE;
+}
+
+.fa-google {
+  /* background: #dd4b39;
+  color: white; */
+  color: #eb361e;
+}
+
+.fa-linkedin {
+  /* background: #007bb5;
+  color: white;*/
+  color: #a6cadb;
+} 
+
+.fa-youtube {
+  /* background: #bb0000;
+  color: white; */
+  color: #bb0000;
+}
+
+.fa-instagram {
+  /* background: #125688;
+  color: white; */
+  color:#c70644;
+} 
+#copyright{
+    color:rgb(243, 243, 243);
+    width: 550px;
+    
+}
+    .creator{
+        padding: 30px 0px 0px 50px;
+        color: rgb(221, 221, 221);
+        text-align: center;
+        margin-left: 130px;
+        font-family:Arial, Helvetica, sans-serifl;
+    }
